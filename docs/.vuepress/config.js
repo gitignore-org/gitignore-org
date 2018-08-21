@@ -18,6 +18,10 @@ module.exports = {
                 text: 'github',
                 link: 'https://github.com/gitignore-org'
             },
+            {
+                text: 'author',
+                link: 'https://github.com/amorist'
+            },
         ]
     }
 }
