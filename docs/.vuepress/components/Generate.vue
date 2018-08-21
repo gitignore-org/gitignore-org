@@ -20,8 +20,6 @@
         <div class="language- extra-class">
             <pre class="language-text"><code v-text="generate_from.editor.content + generate_from.language.content + generate_from.platform.content"></code></pre>
         </div>
-        <!-- <el-input type="textarea" autosize placeholder="请输入内容" v-model="generate_from.editor.content + generate_from.language.content + generate_from.platform.content">
-        </el-input> -->
     </div>
 </template>
 <script>
