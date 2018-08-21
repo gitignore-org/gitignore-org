@@ -1,0 +1,123 @@
+{
+  "platform": [
+    {
+      "name": "Linux",
+      "path": "gitignore-master/Global/Linux.gitignore",
+      "content": "##  Linux\n```\n\n*~\n\n# temporary files which can be created if a process still has a handle open of a deleted file\n.fuse_hidden*\n\n# KDE directory preferences\n.directory\n\n# Linux trash folder which might appear on any partition or disk\n.Trash-*\n\n# .nfs files are created when an open file is removed but is still being accessed\n.nfs*\n\n\n```\n\n"
+    },
+    {
+      "name": "Windows",
+      "path": "gitignore-master/Global/Windows.gitignore",
+      "content": "##  Windows\n```\n\n# Windows thumbnail cache files\nThumbs.db\nehthumbs.db\nehthumbs_vista.db\n\n# Dump file\n*.stackdump\n\n# Folder config file\n[Dd]esktop.ini\n\n# Recycle Bin used on file shares\n$RECYCLE.BIN/\n\n# Windows Installer files\n*.cab\n*.msi\n*.msix\n*.msm\n*.msp\n\n# Windows shortcuts\n*.lnk\n\n\n```\n\n"
+    },
+    {
+      "name": "macOS",
+      "path": "gitignore-master/Global/macOS.gitignore",
+      "content": "##  macOS\n```\n\n# General\n.DS_Store\n.AppleDouble\n.LSOverride\n\n# Icon must end with two \\r\nIcon\r\r\n\n# Thumbnails\n._*\n\n# Files that might appear in the root of a volume\n.DocumentRevisions-V100\n.fseventsd\n.Spotlight-V100\n.TemporaryItems\n.Trashes\n.VolumeIcon.icns\n.com.apple.timemachine.donotpresent\n\n# Directories potentially created on remote AFP share\n.AppleDB\n.AppleDesktop\nNetwork Trash Folder\nTemporary Items\n.apdisk\n\n\n```\n\n"
+    }
+  ],
+  "editor": [
+    {
+      "name": "Eclipse",
+      "path": "gitignore-master/Global/Eclipse.gitignore",
+      "content": "##  Eclipse\n```\n\n\n.metadata\nbin/\ntmp/\n*.tmp\n*.bak\n*.swp\n*~.nib\nlocal.properties\n.settings/\n.loadpath\n.recommenders\n\n# External tool builders\n.externalToolBuilders/\n\n# Locally stored \"Eclipse launch configurations\"\n*.launch\n\n# PyDev specific (Python IDE for Eclipse)\n*.pydevproject\n\n# CDT-specific (C/C++ Development Tooling)\n.cproject\n\n# CDT- autotools\n.autotools\n\n# Java annotation processor (APT)\n.factorypath\n\n# PDT-specific (PHP Development Tools)\n.buildpath\n\n# sbteclipse plugin\n.target\n\n# Tern plugin\n.tern-project\n\n# TeXlipse plugin\n.texlipse\n\n# STS (Spring Tool Suite)\n.springBeans\n\n# Code Recommenders\n.recommenders/\n\n# Annotation Processing\n.apt_generated/\n\n# Scala IDE specific (Scala & Java development for Eclipse)\n.cache-main\n.scala_dependencies\n.worksheet\n\n\n```\n\n"
+    },
+    {
+      "name": "Emacs",
+      "path": "gitignore-master/Global/Emacs.gitignore",
+      "content": "##  Emacs\n```\n\n# -*- mode: gitignore; -*-\n*~\n\\#*\\#\n/.emacs.desktop\n/.emacs.desktop.lock\n*.elc\nauto-save-list\ntramp\n.\\#*\n\n# Org-mode\n.org-id-locations\n*_archive\n\n# flymake-mode\n*_flymake.*\n\n# eshell files\n/eshell/history\n/eshell/lastdir\n\n# elpa packages\n/elpa/\n\n# reftex files\n*.rel\n\n# AUCTeX auto folder\n/auto/\n\n# cask packages\n.cask/\ndist/\n\n# Flycheck\nflycheck_*.el\n\n# server auth directory\n/server/\n\n# projectiles files\n.projectile\n\n# directory configuration\n.dir-locals.el\n\n\n```\n\n"
+    },
+    {
+      "name": "NotepadPP",
+      "path": "gitignore-master/Global/NotepadPP.gitignore",
+      "content": "##  NotepadPP\n```\n\n# Notepad++ backups #\r\n*.bak\r\n\n\n```\n\n"
+    },
+    {
+      "name": "SublimeText",
+      "path": "gitignore-master/Global/SublimeText.gitignore",
+      "content": "##  SublimeText\n```\n\n# Cache files for Sublime Text\n*.tmlanguage.cache\n*.tmPreferences.cache\n*.stTheme.cache\n\n# Workspace files are user-specific\n*.sublime-workspace\n\n# Project files should be checked into the repository, unless a significant\n# proportion of contributors will probably not be using Sublime Text\n# *.sublime-project\n\n# SFTP configuration file\nsftp-config.json\n\n# Package control specific files\nPackage Control.last-run\nPackage Control.ca-list\nPackage Control.ca-bundle\nPackage Control.system-ca-bundle\nPackage Control.cache/\nPackage Control.ca-certs/\nPackage Control.merged-ca-bundle\nPackage Control.user-ca-bundle\noscrypto-ca-bundle.crt\nbh_unicode_properties.cache\n\n# Sublime-github package stores a github token in this file\n# https://packagecontrol.io/packages/sublime-github\nGitHub.sublime-settings\n\n\n```\n\n"
+    },
+    {
+      "name": "Vim",
+      "path": "gitignore-master/Global/Vim.gitignore",
+      "content": "##  Vim\n```\n\n# Swap\n[._]*.s[a-v][a-z]\n[._]*.sw[a-p]\n[._]s[a-rt-v][a-z]\n[._]ss[a-gi-z]\n[._]sw[a-p]\n\n# Session\nSession.vim\n\n# Temporary\n.netrwhist\n*~\n# Auto-generated tag files\ntags\n# Persistent undo\n[._]*.un~\n\n\n```\n\n"
+    },
+    {
+      "name": "VisualStudioCode",
+      "path": "gitignore-master/Global/VisualStudioCode.gitignore",
+      "content": "##  VisualStudioCode\n```\n\n.vscode/*\n!.vscode/settings.json\n!.vscode/tasks.json\n!.vscode/launch.json\n!.vscode/extensions.json\n\n\n```\n\n"
+    },
+    {
+      "name": "Xcode",
+      "path": "gitignore-master/Global/Xcode.gitignore",
+      "content": "##  Xcode\n```\n\n# Xcode\n#\n# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore\n\n## User settings\nxcuserdata/\n\n## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)\n*.xcscmblueprint\n*.xccheckout\n\n## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)\nbuild/\nDerivedData/\n*.moved-aside\n*.pbxuser\n!default.pbxuser\n*.mode1v3\n!default.mode1v3\n*.mode2v3\n!default.mode2v3\n*.perspectivev3\n!default.perspectivev3\n\n\n```\n\n"
+    }
+  ],
+  "language": [
+    {
+      "name": "Actionscript",
+      "path": "gitignore-master/Actionscript.gitignore",
+      "content": "##  Actionscript\n```\n\n# Build and Release Folders\nbin-debug/\nbin-release/\n[Oo]bj/\n[Bb]in/\n\n# Other files and folders\n.settings/\n\n# Executables\n*.swf\n*.air\n*.ipa\n*.apk\n\n# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`\n# should NOT be excluded as they contain compiler settings and other important\n# information for Eclipse / Flash Builder.\n\n\n```\n\n"
+    },
+    {
+      "name": "Android",
+      "path": "gitignore-master/Android.gitignore",
+      "content": "##  Android\n```\n\n# Built application files\n*.apk\n*.ap_\n\n# Files for the ART/Dalvik VM\n*.dex\n\n# Java class files\n*.class\n\n# Generated files\nbin/\ngen/\nout/\n\n# Gradle files\n.gradle/\nbuild/\n\n# Local configuration file (sdk path, etc)\nlocal.properties\n\n# Proguard folder generated by Eclipse\nproguard/\n\n# Log Files\n*.log\n\n# Android Studio Navigation editor temp files\n.navigation/\n\n# Android Studio captures folder\ncaptures/\n\n# IntelliJ\n*.iml\n.idea/workspace.xml\n.idea/tasks.xml\n.idea/gradle.xml\n.idea/assetWizardSettings.xml\n.idea/dictionaries\n.idea/libraries\n.idea/caches\n\n# Keystore files\n# Uncomment the following line if you do not want to check your keystore files in.\n#*.jks\n\n# External native build folder generated in Android Studio 2.2 and later\n.externalNativeBuild\n\n# Google Services (e.g. APIs or Firebase)\ngoogle-services.json\n\n# Freeline\nfreeline.py\nfreeline/\nfreeline_project_description.json\n\n# fastlane\nfastlane/report.xml\nfastlane/Preview.html\nfastlane/screenshots\nfastlane/test_output\nfastlane/readme.md\n\n\n```\n\n"
+    },
+    {
+      "name": "C++",
+      "path": "gitignore-master/C++.gitignore",
+      "content": "##  C++\n```\n\n# Prerequisites\n*.d\n\n# Compiled Object files\n*.slo\n*.lo\n*.o\n*.obj\n\n# Precompiled Headers\n*.gch\n*.pch\n\n# Compiled Dynamic libraries\n*.so\n*.dylib\n*.dll\n\n# Fortran module files\n*.mod\n*.smod\n\n# Compiled Static libraries\n*.lai\n*.la\n*.a\n*.lib\n\n# Executables\n*.exe\n*.out\n*.app\n\n\n```\n\n"
+    },
+    {
+      "name": "C",
+      "path": "gitignore-master/C.gitignore",
+      "content": "##  C\n```\n\n# Prerequisites\n*.d\n\n# Object files\n*.o\n*.ko\n*.obj\n*.elf\n\n# Linker output\n*.ilk\n*.map\n*.exp\n\n# Precompiled Headers\n*.gch\n*.pch\n\n# Libraries\n*.lib\n*.a\n*.la\n*.lo\n\n# Shared objects (inc. Windows DLLs)\n*.dll\n*.so\n*.so.*\n*.dylib\n\n# Executables\n*.exe\n*.out\n*.app\n*.i*86\n*.x86_64\n*.hex\n\n# Debug files\n*.dSYM/\n*.su\n*.idb\n*.pdb\n\n# Kernel Module Compile Results\n*.mod*\n*.cmd\n.tmp_versions/\nmodules.order\nModule.symvers\nMkfile.old\ndkms.conf\n\n\n```\n\n"
+    },
+    {
+      "name": "Go",
+      "path": "gitignore-master/Go.gitignore",
+      "content": "##  Go\n```\n\n# Binaries for programs and plugins\n*.exe\n*.exe~\n*.dll\n*.so\n*.dylib\n\n# Test binary, build with `go test -c`\n*.test\n\n# Output of the go coverage tool, specifically when used with LiteIDE\n*.out\n\n\n```\n\n"
+    },
+    {
+      "name": "Java",
+      "path": "gitignore-master/Java.gitignore",
+      "content": "##  Java\n```\n\n# Compiled class file\n*.class\n\n# Log file\n*.log\n\n# BlueJ files\n*.ctxt\n\n# Mobile Tools for Java (J2ME)\n.mtj.tmp/\n\n# Package Files #\n*.jar\n*.war\n*.nar\n*.ear\n*.zip\n*.tar.gz\n*.rar\n\n# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml\nhs_err_pid*\n\n\n```\n\n"
+    },
+    {
+      "name": "Jekyll",
+      "path": "gitignore-master/Jekyll.gitignore",
+      "content": "##  Jekyll\n```\n\n_site/\n.sass-cache/\n.jekyll-cache/\n.jekyll-metadata\n\n\n```\n\n"
+    },
+    {
+      "name": "Kotlin",
+      "path": "gitignore-master/Kotlin.gitignore",
+      "content": "##  Kotlin\n```\n\n# Compiled class file\n*.class\n\n# Log file\n*.log\n\n# BlueJ files\n*.ctxt\n\n# Mobile Tools for Java (J2ME)\n.mtj.tmp/\n\n# Package Files #\n*.jar\n*.war\n*.nar\n*.ear\n*.zip\n*.tar.gz\n*.rar\n\n# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml\nhs_err_pid*\n\n\n```\n\n"
+    },
+    {
+      "name": "Node",
+      "path": "gitignore-master/Node.gitignore",
+      "content": "##  Node\n```\n\n# Logs\nlogs\n*.log\nnpm-debug.log*\nyarn-debug.log*\nyarn-error.log*\n\n# Runtime data\npids\n*.pid\n*.seed\n*.pid.lock\n\n# Directory for instrumented libs generated by jscoverage/JSCover\nlib-cov\n\n# Coverage directory used by tools like istanbul\ncoverage\n\n# nyc test coverage\n.nyc_output\n\n# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)\n.grunt\n\n# Bower dependency directory (https://bower.io/)\nbower_components\n\n# node-waf configuration\n.lock-wscript\n\n# Compiled binary addons (https://nodejs.org/api/addons.html)\nbuild/Release\n\n# Dependency directories\nnode_modules/\njspm_packages/\n\n# TypeScript v1 declaration files\ntypings/\n\n# Optional npm cache directory\n.npm\n\n# Optional eslint cache\n.eslintcache\n\n# Optional REPL history\n.node_repl_history\n\n# Output of 'npm pack'\n*.tgz\n\n# Yarn Integrity file\n.yarn-integrity\n\n# dotenv environment variables file\n.env\n\n# parcel-bundler cache (https://parceljs.org/)\n.cache\n\n# next.js build output\n.next\n\n# nuxt.js build output\n.nuxt\n\n# vuepress build output\n.vuepress/dist\n\n# Serverless directories\n.serverless\n\n\n```\n\n"
+    },
+    {
+      "name": "Python",
+      "path": "gitignore-master/Python.gitignore",
+      "content": "##  Python\n```\n\n# Byte-compiled / optimized / DLL files\n__pycache__/\n*.py[cod]\n*$py.class\n\n# C extensions\n*.so\n\n# Distribution / packaging\n.Python\nbuild/\ndevelop-eggs/\ndist/\ndownloads/\neggs/\n.eggs/\nlib/\nlib64/\nparts/\nsdist/\nvar/\nwheels/\n*.egg-info/\n.installed.cfg\n*.egg\nMANIFEST\n\n# PyInstaller\n#  Usually these files are written by a python script from a template\n#  before PyInstaller builds the exe, so as to inject date/other infos into it.\n*.manifest\n*.spec\n\n# Installer logs\npip-log.txt\npip-delete-this-directory.txt\n\n# Unit test / coverage reports\nhtmlcov/\n.tox/\n.coverage\n.coverage.*\n.cache\nnosetests.xml\ncoverage.xml\n*.cover\n.hypothesis/\n.pytest_cache/\n\n# Translations\n*.mo\n*.pot\n\n# Django stuff:\n*.log\nlocal_settings.py\ndb.sqlite3\n\n# Flask stuff:\ninstance/\n.webassets-cache\n\n# Scrapy stuff:\n.scrapy\n\n# Sphinx documentation\ndocs/_build/\n\n# PyBuilder\ntarget/\n\n# Jupyter Notebook\n.ipynb_checkpoints\n\n# pyenv\n.python-version\n\n# celery beat schedule file\ncelerybeat-schedule\n\n# SageMath parsed files\n*.sage.py\n\n# Environments\n.env\n.venv\nenv/\nvenv/\nENV/\nenv.bak/\nvenv.bak/\n\n# Spyder project settings\n.spyderproject\n.spyproject\n\n# Rope project settings\n.ropeproject\n\n# mkdocs documentation\n/site\n\n# mypy\n.mypy_cache/\n\n\n```\n\n"
+    },
+    {
+      "name": "Ruby",
+      "path": "gitignore-master/Ruby.gitignore",
+      "content": "##  Ruby\n```\n\n*.gem\n*.rbc\n/.config\n/coverage/\n/InstalledFiles\n/pkg/\n/spec/reports/\n/spec/examples.txt\n/test/tmp/\n/test/version_tmp/\n/tmp/\n\n# Used by dotenv library to load environment variables.\n# .env\n\n## Specific to RubyMotion:\n.dat*\n.repl_history\nbuild/\n*.bridgesupport\nbuild-iPhoneOS/\nbuild-iPhoneSimulator/\n\n## Specific to RubyMotion (use of CocoaPods):\n#\n# We recommend against adding the Pods directory to your .gitignore. However\n# you should judge for yourself, the pros and cons are mentioned at:\n# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control\n#\n# vendor/Pods/\n\n## Documentation cache and generated files:\n/.yardoc/\n/_yardoc/\n/doc/\n/rdoc/\n\n## Environment normalization:\n/.bundle/\n/vendor/bundle\n/lib/bundler/man/\n\n# for a library or gem, you might want to ignore these files since the code is\n# intended to run in multiple environments; otherwise, check them in:\n# Gemfile.lock\n# .ruby-version\n# .ruby-gemset\n\n# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:\n.rvmrc\n\n\n```\n\n"
+    },
+    {
+      "name": "Swift",
+      "path": "gitignore-master/Swift.gitignore",
+      "content": "##  Swift\n```\n\n# Xcode\n#\n# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore\n\n## Build generated\nbuild/\nDerivedData/\n\n## Various settings\n*.pbxuser\n!default.pbxuser\n*.mode1v3\n!default.mode1v3\n*.mode2v3\n!default.mode2v3\n*.perspectivev3\n!default.perspectivev3\nxcuserdata/\n\n## Other\n*.moved-aside\n*.xccheckout\n*.xcscmblueprint\n\n## Obj-C/Swift specific\n*.hmap\n*.ipa\n*.dSYM.zip\n*.dSYM\n\n## Playgrounds\ntimeline.xctimeline\nplayground.xcworkspace\n\n# Swift Package Manager\n#\n# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.\n# Packages/\n# Package.pins\n# Package.resolved\n.build/\n\n# CocoaPods\n#\n# We recommend against adding the Pods directory to your .gitignore. However\n# you should judge for yourself, the pros and cons are mentioned at:\n# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control\n#\n# Pods/\n#\n# Add this line if you want to avoid checking in source code from the Xcode workspace\n# *.xcworkspace\n\n# Carthage\n#\n# Add this line if you want to avoid checking in source code from Carthage dependencies.\n# Carthage/Checkouts\n\nCarthage/Build\n\n# fastlane\n#\n# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the\n# screenshots whenever they are needed.\n# For more information about the recommended setup visit:\n# https://docs.fastlane.tools/best-practices/source-control/#source-control\n\nfastlane/report.xml\nfastlane/Preview.html\nfastlane/screenshots/**/*.png\nfastlane/test_output\n\n# Code Injection\n#\n# After new code Injection tools there's a generated folder /iOSInjectionProject\n# https://github.com/johnno1962/injectionforxcode\n\niOSInjectionProject/\n\n\n```\n\n"
+    },
+    {
+      "name": "Unity",
+      "path": "gitignore-master/Unity.gitignore",
+      "content": "##  Unity\n```\n\n[Ll]ibrary/\n[Tt]emp/\n[Oo]bj/\n[Bb]uild/\n[Bb]uilds/\nAssets/AssetStoreTools*\n\n# Visual Studio cache directory\n.vs/\n\n# Autogenerated VS/MD/Consulo solution and project files\nExportedObj/\n.consulo/\n*.csproj\n*.unityproj\n*.sln\n*.suo\n*.tmp\n*.user\n*.userprefs\n*.pidb\n*.booproj\n*.svd\n*.pdb\n*.opendb\n\n# Unity3D generated meta files\n*.pidb.meta\n*.pdb.meta\n\n# Unity3D Generated File On Crash Reports\nsysinfo.txt\n\n# Builds\n*.apk\n*.unitypackage\n\n\n```\n\n"
+    }
+  ]
+}

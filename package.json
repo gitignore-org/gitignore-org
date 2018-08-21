@@ -1,0 +1,25 @@
+{
+  "name": "gitignore-org",
+  "version": "1.0.0",
+  "description:": "A collection of useful .gitignore templates",
+  "main": "index.js",
+  "repository": "git@github.com:gitignore-org/gitignore-org.git",
+  "author": "Amor <amor90s.zhang@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "collect": "node script/collect.js"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "download": "^7.1.0",
+    "element-ui": "^2.4.6",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "walk-sync": "^0.3.3"
+  }
+}
