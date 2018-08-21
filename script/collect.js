@@ -31,8 +31,8 @@ async function collect() {
         .forEach(file => {
             let name = path.basename(file.relativePath, '.gitignore')
             let content = fs.readFileSync(file.fullPath, "utf-8")
-            content = "##  " + name + "\n" + "```" + "\n\n" + content + "\n\n" + "```" + "\n\n"
-            fs.appendFile(docsMdDir, content, function (err) {
+            let file_content = "##  " + name + "\n" + "```" + "\n\n" + content + "\n\n" + "```" + "\n\n"
+            fs.appendFile(docsMdDir, file_content, function (err) {
                 if (err) {
                     console.log(err)
                 }
