@@ -1,0 +1,48 @@
+/* 改变主题色变量 */
+$--color-primary: #dd4b39;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+/* 自定义类 */
+.primary {
+    background-color: $--color-primary
+}
+
+.success {
+    background-color: $--color-success
+}
+
+.warning {
+    background-color: $--color-warning
+}
+
+.danger {
+    background-color: $--color-danger
+}
+
+.info {
+    background-color: $--color-info
+}
+
+.text-primary {
+    color: $--color-primary
+}
+
+.text-success {
+    color: $--color-success
+}
+
+.text-warning {
+    color: $--color-warning
+}
+
+.text-danger {
+    color: $--color-danger
+}
+
+.text-info {
+    color: $--color-info
+}
