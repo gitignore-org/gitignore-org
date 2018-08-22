@@ -2,7 +2,7 @@ module.exports = {
     title: 'GITIGNORE ORG',
     description: 'A collection of useful .gitignore templates',
     ga: "UA-76504285-8",
-    serviceWorker: true,
+    serviceWorker: false,
     themeConfig: {
         author: "Amor",
         displayAllHeaders: true, // 默认值：false

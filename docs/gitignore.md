@@ -5,31 +5,6 @@ sidebar: auto
 # gitignore
 
 
-##  Actionscript
-```
-
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
-
-
-```
-
 ##  Ada
 ```
 
@@ -38,6 +13,15 @@ bin-release/
 
 # Ada Library Information
 *.ali
+
+
+```
+
+##  AppEngine
+```
+
+# Google App Engine generated folder
+appengine-generated/
 
 
 ```
@@ -255,6 +239,31 @@ CTestTestfile.cmake
 
 ```
 
+##  Actionscript
+```
+
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+
+
+```
+
 ##  CUDA
 ```
 
@@ -264,6 +273,22 @@ CTestTestfile.cmake
 *.ptx
 *.cubin
 *.fatbin
+
+
+```
+
+##  ChefCookbook
+```
+
+.vagrant
+/cookbooks
+
+# Bundler
+bin/*
+.bundle/*
+
+.kitchen/
+.kitchen.local.yml
 
 
 ```
@@ -300,18 +325,31 @@ CTestTestfile.cmake
 
 ```
 
-##  ChefCookbook
+##  Agda
 ```
 
-.vagrant
-/cookbooks
+*.agdai
 
-# Bundler
-bin/*
-.bundle/*
 
-.kitchen/
-.kitchen.local.yml
+```
+
+##  Clojure
+```
+
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/lib/
+/classes/
+/target/
+/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.cpcache/
 
 
 ```
@@ -388,23 +426,26 @@ fastlane/readme.md
 
 ```
 
-##  Clojure
+##  CodeIgniter
 ```
 
-pom.xml
-pom.xml.asc
-*.jar
-*.class
-/lib/
-/classes/
-/target/
-/checkouts/
-.lein-deps-sum
-.lein-repl-history
-.lein-plugins/
-.lein-failures
-.nrepl-port
-.cpcache/
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
 
 
 ```
@@ -1024,15 +1065,6 @@ www-test/
 
 ```
 
-##  AppEngine
-```
-
-# Google App Engine generated folder
-appengine-generated/
-
-
-```
-
 ##  GitBook
 ```
 
@@ -1052,6 +1084,16 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+
+```
+
+##  Anjuta
+```
+
+# Local configuration folder and symbol database
+/.anjuta/
+/.anjuta_sym_db.db
 
 
 ```
@@ -1120,12 +1162,13 @@ _book
 
 ```
 
-##  Anjuta
+##  BricxCC
 ```
 
-# Local configuration folder and symbol database
-/.anjuta/
-/.anjuta_sym_db.db
+# Bricx Command Center IDE
+# http://bricxcc.sourceforge.net
+*.bak
+*.sym
 
 
 ```
@@ -1357,13 +1400,10 @@ flycheck_*.el
 
 ```
 
-##  BricxCC
+##  Espresso
 ```
 
-# Bricx Command Center IDE
-# http://bricxcc.sourceforge.net
-*.bak
-*.sym
+*.esproj
 
 
 ```
@@ -1418,10 +1458,72 @@ cwallet.sso.lck
 
 ```
 
-##  Espresso
+##  JetBrains
 ```
 
-*.esproj
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
 
 
 ```
@@ -1985,27 +2087,6 @@ pip-selfcheck.json
 
 ```
 
-##  WebMethods
-```
-
-**/IntegrationServer/datastore/
-**/IntegrationServer/db/
-**/IntegrationServer/DocumentStore/
-**/IntegrationServer/lib/
-**/IntegrationServer/logs/
-**/IntegrationServer/replicate/
-**/IntegrationServer/sdk/
-**/IntegrationServer/support/
-**/IntegrationServer/update/
-**/IntegrationServer/userFtpRoot/
-**/IntegrationServer/web/
-**/IntegrationServer/WmRepository4/
-**/IntegrationServer/XAStore/
-**/IntegrationServer/packages/Wm*/
-
-
-```
-
 ##  Windows
 ```
 
@@ -2062,6 +2143,27 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+
+
+```
+
+##  WebMethods
+```
+
+**/IntegrationServer/datastore/
+**/IntegrationServer/db/
+**/IntegrationServer/DocumentStore/
+**/IntegrationServer/lib/
+**/IntegrationServer/logs/
+**/IntegrationServer/replicate/
+**/IntegrationServer/sdk/
+**/IntegrationServer/support/
+**/IntegrationServer/update/
+**/IntegrationServer/userFtpRoot/
+**/IntegrationServer/web/
+**/IntegrationServer/WmRepository4/
+**/IntegrationServer/XAStore/
+**/IntegrationServer/packages/Wm*/
 
 
 ```
@@ -2268,14 +2370,6 @@ gradle-app.setting
 
 ```
 
-##  Agda
-```
-
-*.agdai
-
-
-```
-
 ##  Haskell
 ```
 
@@ -2313,6 +2407,15 @@ cabal.project.local~
 *.pxt
 *.uxp
 *.uxt
+
+
+```
+
+##  Idris
+```
+
+*.ibc
+*.o
 
 
 ```
@@ -2380,582 +2483,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-
-
-```
-
-##  Idris
-```
-
-*.ibc
-*.o
-
-
-```
-
-##  Julia
-```
-
-*.jl.cov
-*.jl.*.cov
-*.jl.mem
-deps/deps.jl
-
-
-```
-
-##  KiCad
-```
-
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
-# Format documentation: http://kicad-pcb.org/help/file-formats/
-
-# Temporary files
-*.000
-*.bak
-*.bck
-*.kicad_pcb-bak
-*~
-_autosave-*
-*.tmp
-*-rescue.lib
-*-save.pro
-*-save.kicad_pcb
-
-# Netlist files (exported from Eeschema)
-*.net
-
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
-
-# Exported BOM files
-*.xml
-*.csv
-
-
-```
-
-##  Kohana
-```
-
-application/cache/*
-application/logs/*
-
-
-```
-
-##  Kotlin
-```
-
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-
-```
-
-##  LabVIEW
-```
-
-# Libraries
-*.lvlibp
-*.llb
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-
-# Metadata
-*.aliases
-*.lvlps
-.cache/
-
-
-```
-
-##  Laravel
-```
-
-vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-
-
-```
-
-##  Leiningen
-```
-
-pom.xml
-pom.xml.asc
-*.jar
-*.class
-/lib/
-/classes/
-/target/
-/checkouts/
-.lein-deps-sum
-.lein-repl-history
-.lein-plugins/
-.lein-failures
-.nrepl-port
-.cpcache/
-
-
-```
-
-##  LemonStand
-```
-
-boot.php
-index.php
-install.php
-/config/*
-!/config/config.php
-/controllers/*
-/init/*
-/logs/*
-/phproad/*
-/temp/*
-/uploaded/*
-/installer_files/*
-/modules/backend/*
-/modules/blog/*
-/modules/cms/*
-/modules/core/*
-/modules/session/*
-/modules/shop/*
-/modules/system/*
-/modules/users/*
-# add content_*.php if you don't want erase client changes to content
-
-
-```
-
-##  Lilypond
-```
-
-*.pdf
-*.ps
-*.midi
-*.mid
-*.log
-*~
-
-
-```
-
-##  Lithium
-```
-
-libraries/*
-resources/tmp/*
-
-
-```
-
-##  Lua
-```
-
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-
-
-```
-
-##  Magento
-```
-
-#--------------------------#
-# Magento Default Files    #
-#--------------------------#
-
-/app/etc/local.xml
-
-/media/*
-!/media/.htaccess
-
-!/media/customer
-/media/customer/*
-!/media/customer/.htaccess
-
-!/media/dhl
-/media/dhl/*
-!/media/dhl/logo.jpg
-
-!/media/downloadable
-/media/downloadable/*
-!/media/downloadable/.htaccess
-
-!/media/xmlconnect
-/media/xmlconnect/*
-
-!/media/xmlconnect/custom
-/media/xmlconnect/custom/*
-!/media/xmlconnect/custom/ok.gif
-
-!/media/xmlconnect/original
-/media/xmlconnect/original/*
-!/media/xmlconnect/original/ok.gif
-
-!/media/xmlconnect/system
-/media/xmlconnect/system/*
-!/media/xmlconnect/system/ok.gif
-
-/var/*
-!/var/.htaccess
-
-!/var/package
-/var/package/*
-!/var/package/*.xml
-
-
-
-```
-
-##  Maven
-```
-
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
-
-
-```
-
-##  Mercury
-```
-
-Mercury/
-Mercury.modules
-*.mh
-*.err
-*.init
-*.dll
-*.exe
-*.a
-*.so
-*.dylib
-*.beams
-*.d
-*.c_date
-
-
-```
-
-##  MetaProgrammingSystem
-```
-
-workspace.xml
-junitvmwatcher*.properties
-build.properties
-
-# generated java classes and java source files
-#   manually add any custom artifacts that can't be generated from the models
-#   http://confluence.jetbrains.com/display/MPSD25/HowTo+--+MPS+and+Git
-classes_gen
-source_gen
-source_gen.caches
-
-# generated test code and test results
-test_gen
-test_gen.caches
-TEST-*.xml
-junit*.properties
-
-
-```
-
-##  Nanoc
-```
-
-# For projects using Nanoc (http://nanoc.ws/)
-
-# Default location for output (needs to match output_dir's value found in nanoc.yaml)
-output/
-
-# Temporary file directory
-tmp/nanoc/
-
-# Crash Log
-crash.log
-
-
-```
-
-##  Nim
-```
-
-nimcache/
-
-
-```
-
-##  Node
-```
-
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Directory for instrumented libs generated by jscoverage/JSCover
-lib-cov
-
-# Coverage directory used by tools like istanbul
-coverage
-
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Bower dependency directory (https://bower.io/)
-bower_components
-
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directories
-node_modules/
-jspm_packages/
-
-# TypeScript v1 declaration files
-typings/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-
-# next.js build output
-.next
-
-# nuxt.js build output
-.nuxt
-
-# vuepress build output
-.vuepress/dist
-
-# Serverless directories
-.serverless
-
-
-```
-
-##  OCaml
-```
-
-*.annot
-*.cmo
-*.cma
-*.cmi
-*.a
-*.o
-*.cmx
-*.cmxs
-*.cmxa
-
-# ocamlbuild working directory
-_build/
-
-# ocamlbuild targets
-*.byte
-*.native
-
-# oasis generated files
-setup.data
-setup.log
-
-# Merlin configuring file for Vim and Emacs
-.merlin
-
-
-```
-
-##  Objective-C
-```
-
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
-build/
-DerivedData/
-
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
-
-## Other
-*.moved-aside
-*.xccheckout
-*.xcscmblueprint
-
-## Obj-C/Swift specific
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
 
 
 ```
@@ -3501,29 +3028,589 @@ iOSInjectionProject/
 
 ```
 
-##  OpenCart
+##  Julia
 ```
 
-.htaccess
-/config.php
-admin/config.php
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
 
-!index.html
 
-download/
-image/data/
-image/cache/
-system/cache/
-system/logs/
+```
 
-system/storage/
+##  KiCad
+```
 
-# vQmod log files
-vqmod/logs/*
-# vQmod cache files
-vqmod/vqcache/*
-vqmod/checked.cache
-vqmod/mods.cache
+# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+# Format documentation: http://kicad-pcb.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*~
+_autosave-*
+*.tmp
+*-rescue.lib
+*-save.pro
+*-save.kicad_pcb
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+
+```
+
+##  Kohana
+```
+
+application/cache/*
+application/logs/*
+
+
+```
+
+##  Kotlin
+```
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+```
+
+##  LabVIEW
+```
+
+# Libraries
+*.lvlibp
+*.llb
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+
+# Metadata
+*.aliases
+*.lvlps
+.cache/
+
+
+```
+
+##  Laravel
+```
+
+vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+
+
+```
+
+##  Leiningen
+```
+
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/lib/
+/classes/
+/target/
+/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.cpcache/
+
+
+```
+
+##  LemonStand
+```
+
+boot.php
+index.php
+install.php
+/config/*
+!/config/config.php
+/controllers/*
+/init/*
+/logs/*
+/phproad/*
+/temp/*
+/uploaded/*
+/installer_files/*
+/modules/backend/*
+/modules/blog/*
+/modules/cms/*
+/modules/core/*
+/modules/session/*
+/modules/shop/*
+/modules/system/*
+/modules/users/*
+# add content_*.php if you don't want erase client changes to content
+
+
+```
+
+##  Lilypond
+```
+
+*.pdf
+*.ps
+*.midi
+*.mid
+*.log
+*~
+
+
+```
+
+##  Lithium
+```
+
+libraries/*
+resources/tmp/*
+
+
+```
+
+##  Lua
+```
+
+# Compiled Lua sources
+luac.out
+
+# luarocks build files
+*.src.rock
+*.zip
+*.tar.gz
+
+# Object files
+*.o
+*.os
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.def
+*.exp
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+
+
+```
+
+##  Magento
+```
+
+#--------------------------#
+# Magento Default Files    #
+#--------------------------#
+
+/app/etc/local.xml
+
+/media/*
+!/media/.htaccess
+
+!/media/customer
+/media/customer/*
+!/media/customer/.htaccess
+
+!/media/dhl
+/media/dhl/*
+!/media/dhl/logo.jpg
+
+!/media/downloadable
+/media/downloadable/*
+!/media/downloadable/.htaccess
+
+!/media/xmlconnect
+/media/xmlconnect/*
+
+!/media/xmlconnect/custom
+/media/xmlconnect/custom/*
+!/media/xmlconnect/custom/ok.gif
+
+!/media/xmlconnect/original
+/media/xmlconnect/original/*
+!/media/xmlconnect/original/ok.gif
+
+!/media/xmlconnect/system
+/media/xmlconnect/system/*
+!/media/xmlconnect/system/ok.gif
+
+/var/*
+!/var/.htaccess
+
+!/var/package
+/var/package/*
+!/var/package/*.xml
+
+
+
+```
+
+##  Maven
+```
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+
+```
+
+##  Mercury
+```
+
+Mercury/
+Mercury.modules
+*.mh
+*.err
+*.init
+*.dll
+*.exe
+*.a
+*.so
+*.dylib
+*.beams
+*.d
+*.c_date
+
+
+```
+
+##  MetaProgrammingSystem
+```
+
+workspace.xml
+junitvmwatcher*.properties
+build.properties
+
+# generated java classes and java source files
+#   manually add any custom artifacts that can't be generated from the models
+#   http://confluence.jetbrains.com/display/MPSD25/HowTo+--+MPS+and+Git
+classes_gen
+source_gen
+source_gen.caches
+
+# generated test code and test results
+test_gen
+test_gen.caches
+TEST-*.xml
+junit*.properties
+
+
+```
+
+##  Nanoc
+```
+
+# For projects using Nanoc (http://nanoc.ws/)
+
+# Default location for output (needs to match output_dir's value found in nanoc.yaml)
+output/
+
+# Temporary file directory
+tmp/nanoc/
+
+# Crash Log
+crash.log
+
+
+```
+
+##  Nim
+```
+
+nimcache/
+
+
+```
+
+##  OCaml
+```
+
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+
+# ocamlbuild working directory
+_build/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# oasis generated files
+setup.data
+setup.log
+
+# Merlin configuring file for Vim and Emacs
+.merlin
+
+
+```
+
+##  Objective-C
+```
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+
+```
+
+##  Node
+```
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for instrumented libs generated by jscoverage/JSCover
+lib-cov
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+
+```
+
+##  Opa
+```
+
+_build
+_tracks
+
+opa-debug-js
+
+*.opp
+*.opx
+*.opx.broken
+*.dump
+*.api
+*.api-txt
+*.exe
+*.log
 
 
 ```
@@ -4183,20 +4270,6 @@ Cargo.lock
 
 *.class
 *.log
-
-
-```
-
-##  Scheme
-```
-
-*.ss~
-*.ss#*
-.#*.ss
-
-*.scm~
-*.scm#*
-.#*.scm
 
 
 ```
@@ -5369,26 +5442,6 @@ ASALocalRun/
 
 ```
 
-##  Opa
-```
-
-_build
-_tracks
-
-opa-debug-js
-
-*.opp
-*.opx
-*.opx.broken
-*.dump
-*.api
-*.api-txt
-*.exe
-*.log
-
-
-```
-
 ##  Waf
 ```
 
@@ -5513,6 +5566,20 @@ ext/libtool
 
 ```
 
+##  Scheme
+```
+
+*.ss~
+*.ss#*
+.#*.ss
+
+*.scm~
+*.scm#*
+.#*.scm
+
+
+```
+
 ##  WordPress
 ```
 
@@ -5539,96 +5606,29 @@ wp-content/plugins/hello.php
 
 ```
 
-##  JetBrains
+##  OpenCart
 ```
 
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+.htaccess
+/config.php
+admin/config.php
 
-# User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+!index.html
 
-# Generated files
-.idea/**/contentModel.xml
+download/
+image/data/
+image/cache/
+system/cache/
+system/logs/
 
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
+system/storage/
 
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
-
-# Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
-# since they will be recreated, and may cause churn.  Uncomment if using
-# auto-import.
-# .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
-
-# CMake
-cmake-build-*/
-
-# Mongo Explorer plugin
-.idea/**/mongoSettings.xml
-
-# File-based project format
-*.iws
-
-# IntelliJ
-out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Cursive Clojure plugin
-.idea/replstate.xml
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
-# Editor-based Rest Client
-.idea/httpRequests
-
-
-```
-
-##  CodeIgniter
-```
-
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
-
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
-
-#codeigniter 3
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
-/vendor/
+# vQmod log files
+vqmod/logs/*
+# vQmod cache files
+vqmod/vqcache/*
+vqmod/checked.cache
+vqmod/mods.cache
 
 
 ```

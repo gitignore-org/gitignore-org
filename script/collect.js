@@ -7,7 +7,7 @@ const walk = require('walk-sync').entries
 
 const platform = ["macOS", "Windows", "Linux"]
 
-const editor = ["Xcode", "Vim", "VisualStudioCode", "Emacs", "NotepadPP", "SublimeText", "Eclipse"]
+const editor = ["Xcode", "Vim", "VisualStudioCode", "Emacs", "NotepadPP", "SublimeText", "Eclipse", "JetBrains"]
 
 const language = ["Actionscript", "Android", "Go", "Swift", "Jekyll", "Ruby", "Unity", "Kotlin", "Java", "Node", "Python", "C", "C++"]
 

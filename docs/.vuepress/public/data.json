@@ -28,6 +28,11 @@
       "content": "# -*- mode: gitignore; -*-\n*~\n\\#*\\#\n/.emacs.desktop\n/.emacs.desktop.lock\n*.elc\nauto-save-list\ntramp\n.\\#*\n\n# Org-mode\n.org-id-locations\n*_archive\n\n# flymake-mode\n*_flymake.*\n\n# eshell files\n/eshell/history\n/eshell/lastdir\n\n# elpa packages\n/elpa/\n\n# reftex files\n*.rel\n\n# AUCTeX auto folder\n/auto/\n\n# cask packages\n.cask/\ndist/\n\n# Flycheck\nflycheck_*.el\n\n# server auth directory\n/server/\n\n# projectiles files\n.projectile\n\n# directory configuration\n.dir-locals.el\n"
     },
     {
+      "name": "JetBrains",
+      "path": "gitignore-master/Global/JetBrains.gitignore",
+      "content": "# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm\n# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839\n\n# User-specific stuff\n.idea/**/workspace.xml\n.idea/**/tasks.xml\n.idea/**/usage.statistics.xml\n.idea/**/dictionaries\n.idea/**/shelf\n\n# Generated files\n.idea/**/contentModel.xml\n\n# Sensitive or high-churn files\n.idea/**/dataSources/\n.idea/**/dataSources.ids\n.idea/**/dataSources.local.xml\n.idea/**/sqlDataSources.xml\n.idea/**/dynamic.xml\n.idea/**/uiDesigner.xml\n.idea/**/dbnavigator.xml\n\n# Gradle\n.idea/**/gradle.xml\n.idea/**/libraries\n\n# Gradle and Maven with auto-import\n# When using Gradle or Maven with auto-import, you should exclude module files,\n# since they will be recreated, and may cause churn.  Uncomment if using\n# auto-import.\n# .idea/modules.xml\n# .idea/*.iml\n# .idea/modules\n\n# CMake\ncmake-build-*/\n\n# Mongo Explorer plugin\n.idea/**/mongoSettings.xml\n\n# File-based project format\n*.iws\n\n# IntelliJ\nout/\n\n# mpeltonen/sbt-idea plugin\n.idea_modules/\n\n# JIRA plugin\natlassian-ide-plugin.xml\n\n# Cursive Clojure plugin\n.idea/replstate.xml\n\n# Crashlytics plugin (for Android Studio and IntelliJ)\ncom_crashlytics_export_strings.xml\ncrashlytics.properties\ncrashlytics-build.properties\nfabric.properties\n\n# Editor-based Rest Client\n.idea/httpRequests\n"
+    },
+    {
       "name": "NotepadPP",
       "path": "gitignore-master/Global/NotepadPP.gitignore",
       "content": "# Notepad++ backups #\r\n*.bak\r\n"
