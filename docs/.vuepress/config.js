@@ -6,6 +6,7 @@ module.exports = {
     themeConfig: {
         author: "Amor",
         displayAllHeaders: true, // 默认值：false
+        lastUpdated: 'Last Updated',
         nav: [{
                 text: 'Home',
                 link: '/'
