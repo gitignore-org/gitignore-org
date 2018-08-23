@@ -15,12 +15,16 @@ module.exports = {
                 link: '/gitignore'
             },
             {
-                text: 'github',
-                link: 'https://github.com/gitignore-org'
-            },
-            {
-                text: 'author',
-                link: 'https://github.com/amorist'
+                text: 'contact',
+                items: [{
+                        text: 'github',
+                        link: 'https://github.com/gitignore-org'
+                    },
+                    {
+                        text: 'author',
+                        link: 'https://github.com/amorist'
+                    }
+                ]
             },
         ]
     }
