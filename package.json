@@ -7,6 +7,7 @@
   "author": "Amor <amor90s.zhang@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "exit 0",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "collect": "node script/collect.js"
