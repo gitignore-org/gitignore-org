@@ -5,11 +5,11 @@ const path = require('path')
 const download = require('download')
 const walk = require('walk-sync').entries
 
-const platform = ["macOS", "Windows", "Linux"]
-
-const editor = ["Xcode", "Vim", "VisualStudioCode", "Emacs", "NotepadPP", "SublimeText", "Eclipse", "JetBrains"]
-
-const language = ["Actionscript", "Android", "Go", "Swift", "Jekyll", "Ruby", "Unity", "Kotlin", "Java", "Node", "Python", "C", "C++"]
+const filter = {
+    platform: ["macOS", "Windows", "Linux"],
+    editor: ["Xcode", "Vim", "VisualStudioCode", "Emacs", "NotepadPP", "SublimeText", "Eclipse", "JetBrains"],
+    language: ["Actionscript", "Android", "Go", "Swift", "Jekyll", "Ruby", "Unity", "Kotlin", "Java", "Node", "Python", "C", "C++"]
+}
 
 async function collect() {
     const tempDir = path.join(__dirname, `./temp/`)
@@ -32,32 +32,29 @@ async function collect() {
             let name = path.basename(file.relativePath, '.gitignore')
             let content = fs.readFileSync(file.fullPath, "utf-8")
             let file_content = "##  " + name + "\n" + "```" + "\n\n" + content + "\n\n" + "```" + "\n\n"
-            fs.appendFile(docsMdDir, file_content, function (err) {
+            fs.appendFile(docsMdDir, file_content, function(err) {
                 if (err) {
                     console.log(err)
                 }
-            });
-            if (platform.includes(name)) {
-                data.platform.push({
-                    name: name,
-                    path: file.relativePath,
-                    content: content
-                })
+            })
+            for (type in filter) {
+                if (filter[type].includes(name)) {
+                    data[type].push({
+                        name: name,
+                        path: file.relativePath,
+                        content: content
+                    })
+                }
             }
-            if (editor.includes(name)) {
-                data.editor.push({
-                    name: name,
-                    path: file.relativePath,
-                    content: content
-                })
-            }
-            if (language.includes(name)) {
-                data.language.push({
-                    name: name,
-                    path: file.relativePath,
-                    content: content
-                })
-            }
+        })
+
+        let allList = ['platform', 'editor']
+        allList.forEach(type => {
+            data[type].push({
+                name: 'All',
+                path: false,
+                content: data[type].reduce((_, next) => _.content ? _.content + next.content : _ + next.content)
+            })
         })
     fs.writeFileSync(
         docsDir,

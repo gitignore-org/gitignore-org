@@ -10,3 +10,9 @@ node_modules/
 
 # vuepress build output
 .vuepress/dist
+
+# Package lock
+package-lock.json
+
+# Temporary files
+script/temp
