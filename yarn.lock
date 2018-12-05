@@ -6961,9 +6961,9 @@ vuepress@^0.14.8:
     webpackbar "^2.6.1"
     workbox-build "^3.1.0"
 
-walk-sync@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-0.3.3.tgz#1e9f12cd4fe6e0e6d4a0715b5cc7e30711d43cd1"
+walk-sync@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-1.0.0.tgz#8cb4474b72853adbb06d0968db48e3bbe82aff94"
   dependencies:
     ensure-posix-path "^1.0.0"
     matcher-collection "^1.0.0"
