@@ -21,6 +21,6 @@
     "element-ui": "^2.5.4",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "walk-sync": "^1.0.1"
+    "walk-sync": "^1.1.3"
   }
 }
