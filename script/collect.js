@@ -15,7 +15,8 @@ async function collect() {
     const tempDir = path.join(__dirname, `./temp/`)
     const docsDir = path.join(__dirname, `../docs/.vuepress/public/data.json`)
     const docsMdDir = path.join(__dirname, `../docs/gitignore.md`)
-    const gitignoreUrl = `https://github.com/github/gitignore/archive/master.zip`
+    fs.remove(docsMdDir)
+    const gitignoreUrl = 'https://github.com/github/gitignore/archive/master.zip'
     let data = {
         platform: [],
         editor: [],
@@ -24,19 +25,21 @@ async function collect() {
     await download(gitignoreUrl, tempDir, {
         extract: true
     })
+    let hasHeader = false;
     walk(tempDir, {
             directories: false
         })
         .filter(file => path.extname(file.relativePath.toLowerCase()) == '.gitignore')
         .forEach(file => {
             let name = path.basename(file.relativePath, '.gitignore')
+            if (!hasHeader) {
+                fs.appendFileSync(docsMdDir, '---' + '\n' + 'sidebar: auto' + '\n' + '---' + '\n' + '# gitignore'  + '\n\n')
+                hasHeader = true;
+            }
+
             let content = fs.readFileSync(file.fullPath, "utf-8")
-            let file_content = "##  " + name + "\n" + "```" + "\n\n" + content + "\n\n" + "```" + "\n\n"
-            fs.appendFile(docsMdDir, file_content, function(err) {
-                if (err) {
-                    console.log(err)
-                }
-            })
+            let file_content = '##  ' + name + '\n' + '```' + '\n\n' + content + '\n\n' + '```' + '\n\n'
+            fs.appendFileSync(docsMdDir, file_content)
             for (type in filter) {
                 if (filter[type].includes(name)) {
                     data[type].push({
