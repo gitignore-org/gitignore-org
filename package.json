@@ -13,14 +13,15 @@
     "collect": "node script/collect.js"
   },
   "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
     "vuepress": "^0.14.11"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "download": "^7.1.0",
-    "element-ui": "^2.8.2",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
+    "element-ui": "^2.7.2",
+    "fs-extra": "^8.0.1",
     "walk-sync": "^1.1.3"
   }
 }

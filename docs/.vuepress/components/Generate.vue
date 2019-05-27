@@ -18,7 +18,7 @@
             </el-form-item>
         </el-form>
         <div class="language- extra-class">
-            <pre class="language-text"><code v-text="generate_from.editor.content + generate_from.language.content + generate_from.platform.content"></code></pre>
+          <pre class="language-text"><code v-text="code"></code></pre>
         </div>
     </div>
 </template>
@@ -53,7 +53,7 @@ export default {
   },
   computed: {
     code() {
-      this.generate_from.editor.content;
+      return this.generate_from.editor.content + this.generate_from.language.content + this.generate_from.platform.content;
     },
   },
   created: function() {
