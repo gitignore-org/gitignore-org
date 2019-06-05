@@ -3326,12 +3326,8 @@ Manifest.toml
 *~
 _autosave-*
 *.tmp
-*-rescue.lib
 *-save.pro
 *-save.kicad_pcb
-fp-info-cache
-
-# Footprint cache
 fp-info-cache
 
 # Netlist files (exported from Eeschema)
