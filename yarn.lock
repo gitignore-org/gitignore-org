@@ -9119,10 +9119,10 @@ w3c-hr-time@^1.0.1:
   dependencies:
     browser-process-hrtime "^0.1.2"
 
-walk-sync@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-2.0.0.tgz#c60a97d24bb1147c7eb9ff8ce6e62e025859df62"
-  integrity sha512-RRcqaBvOijQeuqssq7nqzycz07iY2OP8j7TNkfrvc4gOD/H9PRbE0xo/HZsJ2Be6uj75t60nlGWxMqWUuzTkhA==
+walk-sync@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-2.0.1.tgz#3343a9ba6a14524465d55a3b30286bf4e89a3cf2"
+  integrity sha512-wAFkFxM0fE7Qj76ljNgVI46LOAzdEK9zgKLhVmPcmerFu47eh4vbOPP68PocxBYXzIy/tDGQfZI589Eb23nr3Q==
   dependencies:
     "@types/jest" "^24.0.15"
     "@types/minimatch" "^3.0.3"
