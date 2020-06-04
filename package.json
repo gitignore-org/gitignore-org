@@ -21,7 +21,7 @@
     "axios": "^0.19.2",
     "download": "^8.0.0",
     "element-ui": "^2.13.2",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^9.0.1",
     "walk-sync": "^2.1.0"
   }
 }
