@@ -15,7 +15,7 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.3",
-    "vuepress": "^1.7.0"
+    "vuepress": "^1.7.1"
   },
   "dependencies": {
     "axios": "^0.20.0",
