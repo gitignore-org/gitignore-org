@@ -22,6 +22,6 @@
     "download": "^8.0.0",
     "element-ui": "^2.15.2",
     "fs-extra": "^10.0.0",
-    "walk-sync": "^2.2.0"
+    "walk-sync": "^3.0.0"
   }
 }
